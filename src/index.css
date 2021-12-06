@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FOR MARKETING COMPONENT */
+@layer utilities {
+	@variants responsive {
+		.m-image {
+			max-width: 624px;
+		}
+		.m-image-tab {
+			max-width: 348px;
+		}
+		.m-image-phone {
+			max-width: 343px;
+		}
+	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+	body h1 p h2 button {
+		font-family: "Inter", sans-serif;
+	}
+}
+
+@layer utilities {
+	@variants responsive {
+		.m-paragraph {
+			max-width: 474px;
+		}
+	}
+}
+
+/* For Ecomemrce */
+
+@layer utilities {
+	@variants responsive {
+		.e-bag {
+			max-width: 405px;
+		}
+		.e-bag-phone {
+			max-width: 255px;
+		}
+		.wearing-bag-full {
+			max-width: 624px;
+		}
+	}
+}
+
+/* Banner Ecommerce */
+
+@layer utilities {
+	@variants responsive {
+		.e-prod-phone {
+			max-width: 164px;
+		}
+		.e-prod-tab {
+			max-width: 348px;
+		}
+		.e-prod-full {
+			max-width: 406px;
+		}
+	}
+}
+
+/* Hero Banner */
+
+@layer utilities {
+	@variants responsive {
+		.h-phone {
+			max-width: 374px;
+		}
+		.headphone-bg {
+			padding: 24px 79.7px 0 79.7px;
+			max-width: 343px;
+			max-height: 304px;
+		}
+		.headphone-full {
+			padding: 24px 79.7px 0 79.7px;
+			max-width: 624px;
+			max-height: 539px;
+		}
+	}
 }

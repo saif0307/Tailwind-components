@@ -7,15 +7,19 @@ import Footer from "./components/footer/footer";
 const App = () => {
 	return (
 		<>
+			<br />
+			<br />
 			<Hero />
 			<br />
+			<br />
+			<Banner />
 			<br />
 			<br />
 			<Ecommerce />
 			<br />
-			<Banner />
 			<br />
 			<Marketing />
+			<br />
 			<br />
 			<Footer />
 		</>

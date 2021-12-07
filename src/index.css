@@ -60,6 +60,11 @@
 		.e-prod-full {
 			max-width: 406px;
 		}
+		@media (max-width: 350px) {
+			.xs-screen {
+				justify-content: center;
+			}
+		}
 	}
 }
 

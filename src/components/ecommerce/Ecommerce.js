@@ -21,7 +21,7 @@ const Ecommerce = () => {
 				</div>
 			</div>
 			<div className="">
-				<img src={wearingBag} className="m-image-tab lg:wearing-bag-full" />
+				<img src={wearingBag} className="md:m-image-tab lg:wearing-bag-full" />
 			</div>
 		</div>
 	);
